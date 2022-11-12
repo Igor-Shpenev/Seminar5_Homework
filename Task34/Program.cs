@@ -26,18 +26,18 @@ int SumEvenNumbers(int[] arr)
     {
         if (arr[i] % 2 == 0)
         {
-            count += arr[i];                                    // Суммируем четные элементы массива
+            count ++;                                    // Суммируем кол-во четных элементов массива
         }
     }
     return count;
 }
 
-Console.Write("Input number: ");
+Console.Write("Input lenght of array: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int[] myarr = CreateNewArray(num);   // Создаем новый массив                              
 PrintArray(myarr);
 int sum = SumEvenNumbers(myarr);
-Console.WriteLine($" Sum of the even numbers of the array is {sum}");
+Console.WriteLine($"The number of even numbers in the array is {sum}");
 
 
 
